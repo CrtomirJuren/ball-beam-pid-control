@@ -1,4 +1,4 @@
-# 1 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
+# 1 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
 /*
 
  * PID Ball Beam Project 
@@ -14,23 +14,25 @@
  * SP(setpoint): desired ball position
 
  */
-# 10 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
+# 10 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
 //-----------------------------------------------------
 //--------LIBRARIES, INCLUDES, HEADERS-----------------
 //-----------------------------------------------------
-# 14 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
+# 14 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
 
-# 16 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
+# 16 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
+// #include <Wire.h>
+
 //#include <FastPID.h>
 //#include <Servo.h>
 
-# 20 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
-# 21 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
-# 22 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
-# 23 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
-# 24 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
-# 25 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
-# 26 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
+# 22 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
+# 23 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
+# 24 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
+# 25 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
+# 26 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
+# 27 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
+# 28 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino" 2
 
 //-----------------------------------------------------
 //-------------------DEFINES---------------------------
@@ -172,7 +174,7 @@ void send_serial(void){
     @return distance[mm]
 
 **************************************/
-# 163 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
+# 165 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
 int get_distance(void){
   // local variables
   bool measurement_success;

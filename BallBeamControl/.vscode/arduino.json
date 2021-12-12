@@ -1,0 +1,7 @@
+{
+    "sketch": "BallBeamControl.ino",
+    "port": "COM3",
+    "board": "arduino:avr:uno",
+    "programmer": "arduino:avrisp",
+    "output": "./build"
+}

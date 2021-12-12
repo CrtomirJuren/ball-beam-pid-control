@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#line 1 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
+#line 1 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
 /*
  * PID Ball Beam Project 
  * 
@@ -15,6 +15,8 @@
 #include "Adafruit_VL53L0X.h" // distance sensor
 
 #include <MovingAverage.h>
+// #include <Wire.h>
+
 //#include <FastPID.h>
 //#include <Servo.h>
 
@@ -76,17 +78,17 @@ Pid myPid(0.5, 0.05, 5);
 //-----------------------------------------------------
 //----------------SETUP LOOP---------------------------
 //-----------------------------------------------------
-#line 77 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
+#line 79 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
 void setup();
-#line 109 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
+#line 111 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
 void loop();
-#line 132 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
+#line 134 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
 void send_serial(void);
-#line 163 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
+#line 165 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
 int get_distance(void);
-#line 199 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
+#line 201 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
 void set_servo_position(int manipulated_variable);
-#line 77 "c:\\Users\\crtom\\Documents\\ball-beam-project.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
+#line 79 "c:\\Users\\crtom\\Documents\\ball-beam-pid-control.git\\Arduino\\5-pid-v4\\5-pid-v4.ino"
 void setup()
 {
   //initialize serial communication
@@ -219,3 +221,4 @@ void set_servo_position(int manipulated_variable){
   //set_servo_position(servo_sp);
   myservo.write(servo_sp);               
 }
+

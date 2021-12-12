@@ -1,9 +1,28 @@
 # BALL AND BEAM PROJECT
 
+## DESCRIPTION
+
+# SETPOINT MODES
+
+- 1. Static: programmed (first )
+- 2. Sequence 2 point: programmed
+- 3. Sequence slow wave: programmed
+- 4. potentiometer: 
+- 5. hand mirroring: 
+- 6. serial port read
+
+# Programming course
+- read distance from laser VL53L0X and printout to serial
+
+
+# Servo motor
+
+# Laser distance sensor
+- #include "Adafruit_VL53L0X.h"
+
+  PROGRAMSKE SPECIFIKACIJE ZA KNJIžNJICO https://documentation.help/VL53L0X-API/index.html
+
 Hardware, Software, Simulation for Ball Beam PID Control. FreeCAD, Arduino, Python, Jupyter, Binder
-
-
-
 
 nastavljanje servo motorja
 
@@ -12,23 +31,11 @@ nastavljanje servo motorja
 - servo motor je nastavljen, da ima 90° za izhodiščno točko. to pa zato, ker bo krmiljen v + in v -. Zato ne sme biti na 0°. ker potem, če bi mu ukazali, premakni se v minus. se ne bi mogle.
 - napiše se funkcija, da bo imel gibanje med -20° < angle < +20°
 
-
-
-## DVE VERZIJI PROGRAMA - pid preko labview
-
-labview prejme podatke senzorjev - preračuna pid in vrne nazaj pozicijo servota
-
-vse narejeno na arduino. labview prikazuje podatke in lahko spreminja kp,ki,kd parametre
-
-
-
 ## ARDUINO CODE
 
 - #include "Adafruit_VL53L0X.h"
 
   PROGRAMSKE SPECIFIKACIJE ZA KNJIžNJICO https://documentation.help/VL53L0X-API/index.html
-
-  
 
 - Using Serial Monitor to Control Servo Motor
 
